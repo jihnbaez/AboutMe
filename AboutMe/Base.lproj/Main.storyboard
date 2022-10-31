@@ -1,24 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zPI-0Q-j02">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="maa-Vu-mer">
+                                <rect key="frame" x="15" y="47" width="814" height="313"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like top play video games and soccer, and volleyball." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIl-rs-rCT">
+                                        <rect key="frame" x="227.33333333333334" y="0.0" width="359.33333333333326" height="121"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="ONU-tq-lV1">
+                                        <rect key="frame" x="15" y="136" width="784" height="177"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ONU-tq-lV1" firstAttribute="leading" secondItem="maa-Vu-mer" secondAttribute="leading" constant="15" id="1Nu-ZN-M8x"/>
+                                    <constraint firstAttribute="trailing" secondItem="ONU-tq-lV1" secondAttribute="trailing" constant="15" id="Qeg-RA-87y"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="maa-Vu-mer" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="1Fc-mE-scL">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="maa-Vu-mer" secondAttribute="trailing" constant="15" id="9Ck-7t-hFi"/>
+                            <constraint firstAttribute="bottom" secondItem="maa-Vu-mer" secondAttribute="bottom" id="Mew-zg-9A5">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="maa-Vu-mer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="dVG-nT-L2p"/>
+                            <constraint firstItem="maa-Vu-mer" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="f4F-AG-3Ix"/>
+                            <constraint firstItem="maa-Vu-mer" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o3R-dx-GdE">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="soccerball" catalog="system" id="65Q-n1-2WZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1323.0769230769231" y="-660.42654028436016"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="f5r-Eu-VaC">
+            <objects>
+                <viewController id="Y7X-38-3g5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2db-4m-Bfr">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UVk-4W-Wa0">
+                                <rect key="frame" x="15" y="-3.6666666666666572" width="814" height="393.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRx-Er-Ajz">
+                                        <rect key="frame" x="16" y="0.0" width="782" height="33.666666666666664"/>
+                                        <string key="text">I have a mom and dad, and I have 2 brothers, a little one and a older one, the older one doesn't live with me the little one of course does.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="360_F_317110332_hk9SkIZ3QJPPp5qjol11Mbdrq7UbnvJL" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-Gd-wde">
+                                        <rect key="frame" x="227" y="33.666666666666657" width="360" height="360"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XzR-pE-Ctx"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="XzR-pE-Ctx" firstAttribute="trailing" secondItem="UVk-4W-Wa0" secondAttribute="trailing" constant="15" id="EhQ-hr-H8v"/>
+                            <constraint firstItem="UVk-4W-Wa0" firstAttribute="leading" secondItem="XzR-pE-Ctx" secondAttribute="leading" constant="15" id="Iwb-Kt-ABE"/>
+                            <constraint firstItem="UVk-4W-Wa0" firstAttribute="leading" secondItem="2db-4m-Bfr" secondAttribute="leading" constant="15" id="ZVm-AJ-hdq"/>
+                            <constraint firstAttribute="trailing" secondItem="UVk-4W-Wa0" secondAttribute="trailing" constant="15" id="sXp-AT-p0z">
+                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="UVk-4W-Wa0" secondAttribute="bottom" constant="100" id="sfb-Kg-1KG">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="person.2" catalog="system" id="bSV-97-Gp2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhZ-T5-s4Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="566" y="-358"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="u9d-Yh-fXE">
+            <objects>
+                <viewController id="bL7-af-4Vd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pHX-nw-VpF">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ke2-vk-wn6">
+                                <rect key="frame" x="0.0" y="47" width="844" height="343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="I am a highschool Student and I am 17 years old, my birthday is November 22, 2004" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-sm-QI4">
+                                        <rect key="frame" x="82" y="0.0" width="680" height="143"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad-guy-in-black-white-hands-raised-free-clip-art-man-clipart-black-and-white-439_560" translatesAutoresizingMaskIntoConstraints="NO" id="OYZ-m1-bqQ">
+                                        <rect key="frame" x="202.66666666666663" y="143" width="439" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="saL-TX-SLe">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="400"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1VD-ry-o7Q"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Ke2-vk-wn6" firstAttribute="top" secondItem="1VD-ry-o7Q" secondAttribute="top" id="3HM-7T-Bhw"/>
+                            <constraint firstAttribute="bottom" secondItem="Ke2-vk-wn6" secondAttribute="bottom" id="4EL-Mc-u0b"/>
+                            <constraint firstAttribute="trailing" secondItem="Ke2-vk-wn6" secondAttribute="trailing" id="gu2-p3-shS"/>
+                            <constraint firstItem="Ke2-vk-wn6" firstAttribute="leading" secondItem="pHX-nw-VpF" secondAttribute="leading" id="nGU-3h-84c"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" id="Jda-2t-0QW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HWc-eX-Vp7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-203.07692307692307" y="-447.15639810426541"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vnQ-N5-Fhe">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zPI-0Q-j02" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HB3-eZ-W16">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="v6V-YG-m8R"/>
+                        <segue destination="Y7X-38-3g5" kind="relationship" relationship="viewControllers" id="wmm-Lz-Hpg"/>
+                        <segue destination="bL7-af-4Vd" kind="relationship" relationship="viewControllers" id="VnJ-14-com"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y84-MN-tzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="-1103"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="360_F_317110332_hk9SkIZ3QJPPp5qjol11Mbdrq7UbnvJL" width="360" height="360"/>
+        <image name="ad-guy-in-black-white-hands-raised-free-clip-art-man-clipart-black-and-white-439_560" width="439" height="560"/>
+        <image name="images" width="285" height="177"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.2" catalog="system" width="128" height="82"/>
+        <image name="soccerball" catalog="system" width="128" height="123"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
